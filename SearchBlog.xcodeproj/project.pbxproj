@@ -19,6 +19,9 @@
 		00F69BAD27690D4200D7F23E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BAC27690D4200D7F23E /* MainViewController.swift */; };
 		00F69BB027690EAC00D7F23E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BAF27690EAC00D7F23E /* SearchBar.swift */; };
 		00F69BB3276913BD00D7F23E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BB2276913BD00D7F23E /* FilterView.swift */; };
+		00F69BB6276915DB00D7F23E /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BB5276915DB00D7F23E /* BlogList.swift */; };
+		00F69BB9276915F300D7F23E /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BB8276915F300D7F23E /* BlogListCell.swift */; };
+		00F69BBC2769161100D7F23E /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BBB2769161100D7F23E /* BlogListCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		00F69BAC27690D4200D7F23E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		00F69BAF27690EAC00D7F23E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		00F69BB2276913BD00D7F23E /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		00F69BB5276915DB00D7F23E /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
+		00F69BB8276915F300D7F23E /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
+		00F69BBB2769161100D7F23E /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +76,73 @@
 			children = (
 				00F69B8627690BFF00D7F23E /* AppDelegate.swift */,
 				00F69B8827690BFF00D7F23E /* SceneDelegate.swift */,
-				00F69BAC27690D4200D7F23E /* MainViewController.swift */,
-				00F69BAF27690EAC00D7F23E /* SearchBar.swift */,
-				00F69BB2276913BD00D7F23E /* FilterView.swift */,
+				00F69BC12769165F00D7F23E /* Entities */,
+				00F69BBF2769164C00D7F23E /* Presentation */,
 				00F69B8F27690C0B00D7F23E /* Assets.xcassets */,
 				00F69B9127690C0B00D7F23E /* LaunchScreen.storyboard */,
 				00F69B9427690C0B00D7F23E /* Info.plist */,
 			);
 			path = SearchBlog;
+			sourceTree = "<group>";
+		};
+		00F69BBF2769164C00D7F23E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BC727691D4300D7F23E /* MainViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00F69BC12769165F00D7F23E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BBB2769161100D7F23E /* BlogListCellData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		00F69BC627691D3700D7F23E /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BC927691D5800D7F23E /* SearchBar */,
+				00F69BCC27691D6600D7F23E /* BlogListView */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		00F69BC727691D4300D7F23E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BAC27690D4200D7F23E /* MainViewController.swift */,
+				00F69BC627691D3700D7F23E /* SubComponents */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		00F69BC927691D5800D7F23E /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BAF27690EAC00D7F23E /* SearchBar.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		00F69BCC27691D6600D7F23E /* BlogListView */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BB5276915DB00D7F23E /* BlogList.swift */,
+				00F69BCE27691D7B00D7F23E /* SubComponents */,
+			);
+			path = BlogListView;
+			sourceTree = "<group>";
+		};
+		00F69BCE27691D7B00D7F23E /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				00F69BB2276913BD00D7F23E /* FilterView.swift */,
+				00F69BB8276915F300D7F23E /* BlogListCell.swift */,
+			);
+			path = SubComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F69BAD27690D4200D7F23E /* MainViewController.swift in Sources */,
+				00F69BB9276915F300D7F23E /* BlogListCell.swift in Sources */,
+				00F69BB6276915DB00D7F23E /* BlogList.swift in Sources */,
 				00F69BB027690EAC00D7F23E /* SearchBar.swift in Sources */,
 				00F69B8727690BFF00D7F23E /* AppDelegate.swift in Sources */,
 				00F69BB3276913BD00D7F23E /* FilterView.swift in Sources */,
 				00F69B8927690BFF00D7F23E /* SceneDelegate.swift in Sources */,
+				00F69BBC2769161100D7F23E /* BlogListCellData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
