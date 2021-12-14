@@ -18,6 +18,7 @@
 		00F69BA927690CEC00D7F23E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00F69BA827690CEC00D7F23E /* SnapKit */; };
 		00F69BAD27690D4200D7F23E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BAC27690D4200D7F23E /* MainViewController.swift */; };
 		00F69BB027690EAC00D7F23E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BAF27690EAC00D7F23E /* SearchBar.swift */; };
+		00F69BB3276913BD00D7F23E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BB2276913BD00D7F23E /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		00F69B9427690C0B00D7F23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F69BAC27690D4200D7F23E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		00F69BAF27690EAC00D7F23E /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		00F69BB2276913BD00D7F23E /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				00F69B8827690BFF00D7F23E /* SceneDelegate.swift */,
 				00F69BAC27690D4200D7F23E /* MainViewController.swift */,
 				00F69BAF27690EAC00D7F23E /* SearchBar.swift */,
+				00F69BB2276913BD00D7F23E /* FilterView.swift */,
 				00F69B8F27690C0B00D7F23E /* Assets.xcassets */,
 				00F69B9127690C0B00D7F23E /* LaunchScreen.storyboard */,
 				00F69B9427690C0B00D7F23E /* Info.plist */,
@@ -161,6 +164,7 @@
 				00F69BAD27690D4200D7F23E /* MainViewController.swift in Sources */,
 				00F69BB027690EAC00D7F23E /* SearchBar.swift in Sources */,
 				00F69B8727690BFF00D7F23E /* AppDelegate.swift in Sources */,
+				00F69BB3276913BD00D7F23E /* FilterView.swift in Sources */,
 				00F69B8927690BFF00D7F23E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
