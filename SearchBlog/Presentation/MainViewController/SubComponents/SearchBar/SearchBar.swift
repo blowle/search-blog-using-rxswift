@@ -14,15 +14,7 @@ class SearchBar: UISearchBar {
     let disposeBag = DisposeBag()
     
     let searchButton = UIButton()
-    
-    
-    // SearchBar Button tap event
-    let searchButtonTapped = PublishRelay<Void>()
-    
-    // send SearchBar's String to external size
-    var shouldLoadResult = Observable<String>.of()
-    
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -32,24 +24,23 @@ class SearchBar: UISearchBar {
     }
     
     
-    private func bind() {
+    private func bind(_ viewModel: SearchBarViewModel) {
+        self.rx.text
+            .bind(to: viewModel.queryText)
+            .disposed(by: disposeBag)
+        
         // searchBar search button tapped
         // button tapped
         Observable
             .merge(self.rx.searchButtonClicked.asObservable(),
                    searchButton.rx.tap.asObservable())
-            .bind(to: searchButtonTapped)
+            .bind(to: viewModel.searchButtonTapped)
             .disposed(by: disposeBag)
         
-        searchButtonTapped
+        viewModel.searchButtonTapped
             .asSignal()
             .emit(to: self.rx.endEditing)
             .disposed(by: disposeBag)
-        
-        self.shouldLoadResult = searchButtonTapped
-            .withLatestFrom(self.rx.text) { $1 ?? "" }
-            .filter { !$0.isEmpty }
-            .distinctUntilChanged()
     }
     
     private func attribute() {

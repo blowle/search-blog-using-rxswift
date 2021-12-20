@@ -26,6 +26,7 @@
 		00F69BD5276927F000D7F23E /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BD4276927F000D7F23E /* DKBlog.swift */; };
 		00F69BD827692AA600D7F23E /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BD727692AA600D7F23E /* SearchBlogAPI.swift */; };
 		00F69BDD27692B6A00D7F23E /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F69BDC27692B6A00D7F23E /* SearchBlogNetwork.swift */; };
+		C91D19282770C8C80080A2C9 /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D19272770C8C80080A2C9 /* SearchBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		00F69BD4276927F000D7F23E /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
 		00F69BD727692AA600D7F23E /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
 		00F69BDC27692B6A00D7F23E /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
+		C91D19272770C8C80080A2C9 /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				00F69BAF27690EAC00D7F23E /* SearchBar.swift */,
+				C91D19272770C8C80080A2C9 /* SearchBarViewModel.swift */,
 			);
 			path = SearchBar;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				00F69BB3276913BD00D7F23E /* FilterView.swift in Sources */,
 				00F69B8927690BFF00D7F23E /* SceneDelegate.swift in Sources */,
 				00F69BBC2769161100D7F23E /* BlogListCellData.swift in Sources */,
+				C91D19282770C8C80080A2C9 /* SearchBarViewModel.swift in Sources */,
 				00F69BDD27692B6A00D7F23E /* SearchBlogNetwork.swift in Sources */,
 				00F69BD227691FAA00D7F23E /* AlertActionConvertible.swift in Sources */,
 			);
