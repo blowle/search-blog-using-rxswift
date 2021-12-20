@@ -17,6 +17,8 @@ class SearchBar: UISearchBar {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        attribute()
+        layout()
     }
     
     required init?(coder: NSCoder) {
@@ -24,7 +26,7 @@ class SearchBar: UISearchBar {
     }
     
     
-    private func bind(_ viewModel: SearchBarViewModel) {
+    func bind(_ viewModel: SearchBarViewModel) {
         self.rx.text
             .bind(to: viewModel.queryText)
             .disposed(by: disposeBag)

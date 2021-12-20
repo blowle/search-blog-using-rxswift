@@ -15,20 +15,18 @@ class BlogList: UITableView {
     
     let headerView = FilterView(frame: CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: 50)))
     
-    // MainViewController -> BlogListView
-    let cellData = PublishSubject<[BlogListCellData]>()
-    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
+        
+        attribute()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func bind() {
-        cellData
-            .asDriver(onErrorJustReturn: [])
+    func bind(_ viewModel: BlogListViewModel) {
+        viewModel.cellData
             .drive(self.rx.items) { tableview, row, data in
                 let indexPath = IndexPath(row: row, section: 0)
                 let cell = tableview.dequeueReusableCell(withIdentifier: "BlogListCell", for: indexPath) as! BlogListCell
